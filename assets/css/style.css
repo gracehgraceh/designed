@@ -16,10 +16,11 @@ body {
 /* ***************index.html  centers title image*/
 .title-page {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    width: 80%;
+    position: absolute;
+    left: -5px;
+    top: -12px;
+
+
 
 }
 
@@ -27,7 +28,7 @@ body {
 .icon1 {
     height: 25px;
     position: absolute;
-    left: 750px;
+    left: 730px;
     top: 28px;
     opacity: 0.2;
 
@@ -36,10 +37,10 @@ body {
 .icon2 {
     height: 25px;
     position: absolute;
-    left: 747px;
-    top: 430px;
-    opacity: 0.2;
-    display: none;
+    left: 715px;
+    top: 415px;
+    opacity: 0.4;
+
 
 
 }
@@ -116,32 +117,32 @@ button:hover {
     display: block;
     position: absolute;
     top: 0;
-    left: 38px;
-    width: 80px;
-    height: 200px;
+    left: 6px;
+    width: 36px;
+    height: 140px;
     z-index: 999;
-    height: 164px;
     width: 35px;
+
 }
 
 .trigger-dictionary {
-    top: 303px;
+    top: 145px;
     /*border: 1px solid red;*/
 }
 
 .trigger-wikipedia {
-    top: 139px;
+    top: 0px;
     /*border: 1px solid orange;*/
 }
 
-.trigger-add {
+/*    .trigger-add {
     top: 140px;
     width: 50px;
     height: 55px;
     left: 0;
 
     /*border: 1px solid yellow;*/
-}
+
 
 
 .tab1red {
@@ -235,7 +236,7 @@ button:hover {
     position: absolute;
 
     top: 15px;
-    left: 275px;
+    left: 550px;
 
     width: 200px;
     height: 200px;
@@ -276,10 +277,10 @@ button:hover {
     grid-template-rows: 50px 40px 40px 60px 1fr;
 }
 
-.settings-entry-box {
+/*.settings-entry-box {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-}
+} */
 
 .settings2 {
     position: absolute;
