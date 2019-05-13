@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.wrapper {
+    width: 800px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 75px 1fr 75px;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.frame {
+    border: 5px solid red;
+    border-radius: 8px;
+}
+
+.tabs-wrapper {
+    position: relative;
+}
+
+.tabs {
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    right: 0;
+    text-align: right;
+    transform-origin: 100% 100%;
+    transform: rotate(-90deg);
+}
+
+
+
+.tab {
+    /* border: 1px solid black; */
+    padding: 0.5em 1em;
+    font-size: 20px;
+    border-radius: 8px;
+    /* background: red; */
+    color: white;
+}
+
+.tab-steelcase {
+    background-color: blue;
+}
+
+.tab-wikipedia {
+    background-color: orange;
+}
+
+.tab-dictionary {
+    background-color: red;
+}

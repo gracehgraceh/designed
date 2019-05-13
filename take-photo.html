@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Designed: Object Detection x Knowledge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="camera">
+        <p class="camera-info-text"><span class="text-big">Tap anywhere to take a photo</span> <span class="text-small">and see human design</span></p>
+        <video id="video">Video stream not available.</video>
+    </div>
+
+    <div class="picture-wrapper">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="tabs">
+        <div class="tab-trigger trigger-dictionary"></div>
+        <div class="tab-trigger trigger-wikipedia"></div>
+        <a href="add-tab.html">
+            <div class="tab-trigger trigger-add">
+            </div>
+        </a>
+
+        <div class="tab1red">
+            <div class="dictionary-wrapper">
+                <h3 class="title"></h3>
+                <p class="body"></p>
+            </div>
+            <img src="assets/img/tab1.png" alt="dictionary tab">
+
+        </div>
+
+        <div class="tab2orange">
+            <div class="wikipedia-wrapper">
+                <h3 class="title"></h3>
+                <p class="body"></p>
+            </div>
+            <img src="assets/img/tab2.png" alt="wikipedia tab">
+
+        </div>
+
+        <div class="tab3blue"> <img src="assets/img/tab3.png" alt="steelcase information tab">
+
+        </div>
+        <div class="tabadd"><img src="assets/img/add-tab.png" alt="add tab">
+
+        </div>
+        <div class="tabpersonal-notebook"><img src="assets/img/tab4big.png" alt="personalnotebook tab">
+            <div></div>
+        </div>
+        <div class="tab-merge"><img src="assets/img/tab5big.png" alt="merged database tab">
+            <div></div>
+        </div>
+
+        <div class="tab-buttons">
+            <div class="button-red"></div>
+            <div class="button-orange"></div>
+            <div class="button-blue "></div>
+            <div class="button-add"></div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <a href="settings.html"> <img class="icon1" src="assets/img/gear-icon.png" alt="settings"></a>
+        <a href="take-photo.html"> <img class="icon2" src="assets/img/camera-icon.png" alt="camera"></a>
+    </div>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.449.0.min.js">
+    </script>
+    <script src="./assets/js/take-photo.js"></script>
+</body>
+</html>

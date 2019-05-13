@@ -1,0 +1,384 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    width: 800px;
+    height: 480px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ***************index.html  centers title image*/
+.title-page {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+
+}
+
+/* ***********      little menu of settings (icon1) and camera (icon2) icons */
+.icon1 {
+    height: 25px;
+    position: absolute;
+    left: 750px;
+    top: 28px;
+    opacity: 0.2;
+
+}
+
+.icon2 {
+    height: 25px;
+    position: absolute;
+    left: 747px;
+    top: 430px;
+    opacity: 0.2;
+    display: none;
+
+
+}
+
+/* *******************             take picture page */
+
+.text-big {
+    font-size: 40px;
+    display: block;
+}
+
+.text-small {
+    font-size: 20px;
+    display: block;
+}
+
+.picture-wrapper {
+    display: none;
+    position: relative;
+
+}
+
+/*taking the photo part*/
+
+#photo {
+    height: 460px;
+    width: 780px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.camera {
+    width: 780px;
+    display: inline-block;
+}
+
+.output {
+    width: 780px;
+    display: inline-block;
+}
+
+#startbutton {
+    /*customize here, grace */
+    display: block;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 8px solid red;
+    width: 780px;
+    ;
+
+}
+
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    box-shadow: 1px 1px lightgray;
+    padding: 20px;
+}
+
+.browse {
+    height: 115px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+/*tab frames part*/
+.tab-trigger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 80px;
+    height: 200px;
+    z-index: 999;
+    height: 164px;
+    width: 35px;
+}
+
+.trigger-dictionary {
+    top: 303px;
+    /*border: 1px solid red;*/
+}
+
+.trigger-wikipedia {
+    top: 139px;
+    /*border: 1px solid orange;*/
+}
+
+.trigger-add {
+    top: 140px;
+    width: 50px;
+    height: 55px;
+    left: 0;
+
+    /*border: 1px solid yellow;*/
+}
+
+
+.tab1red {
+
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+
+}
+
+.tab2orange {
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+}
+
+.tab3blue {
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+}
+
+.tabadd {
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+}
+
+.tabpersonal-notebook {
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+}
+
+.tab-merge {
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 5px;
+    display: none;
+}
+
+/* this is my attempt to make fake buttons of the tabs; goal is after i figure it out to change the bkg to transparent and then link them --- but it doesn't work yet; thiis grid changes position after the photo is taken
+
+.tab-buttons {
+    display: grid;
+    grid-template-columns: 10px 22px 22px 1fr;
+    grid-template-rows: 28px 135px 135px 135px 1fr;
+
+
+.button-red {
+    grid-column: 3 / 4;
+    grid-row: 3/ 4;
+    background-color: blue;
+}
+
+
+
+
+/* the API text box part */
+.wikipedia-wrapper {
+    position: absolute;
+
+    top: 15px;
+    left: 75px;
+
+    width: 200px;
+    height: 200px;
+    font-size: 12px;
+
+    background-color: rgba(255, 255, 255, .25);
+    padding: 10px;
+    overflow: scroll;
+    border-radius: 8px;
+
+    z-index: 999;
+}
+
+.dictionary-wrapper {
+    position: absolute;
+
+    top: 15px;
+    left: 275px;
+
+    width: 200px;
+    height: 200px;
+    font-size: 12px;
+
+    background-color: rgba(255, 255, 255, .25);
+    padding: 10px;
+    overflow: scroll;
+    border-radius: 8px;
+
+    z-index: 999;
+}
+
+.camera {
+    position: relative;
+    cursor: pointer;
+}
+
+.camera-info-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*settings.html */
+.settings1 {
+    position: absolute;
+    top: 3px;
+    left: 30px;
+}
+
+.grid {
+    /*really to set up a grid for fake buttons */
+    display: grid;
+    grid-template-columns: 150px 230px 1fr;
+    grid-template-rows: 50px 40px 40px 60px 1fr;
+}
+
+.settings-entry-box {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.settings2 {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+
+}
+
+/*  ******************       old  settings page
+.settings {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 60px 75px 300px;
+    grid-column-gap: 50px;
+}
+
+.suggested-topics-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.suggested-topics ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.settings b {
+    font-family: 'Roboto',
+        black;
+}
+
+.settings h1 {
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+.set-col-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.r2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.r2 input {
+    height: 50px;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.r3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+.set-col-2 {
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+/*.set-col-2 input {
+    width: 300px;
+}
+
+.c2r3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.c2r3 input .number {
+    width: 300px;
+} */
+
+
+/*take-photo.html old
+
+.super-big {
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+.big {
+    font-size: 25px;
+    color: gray;
+}
+
+.camera {
+    height: 460px;
+    width: 780px;
+    border: 3px solid red;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.tap {
+    grid-column: 1;
+    justify-self: center;
+} */
